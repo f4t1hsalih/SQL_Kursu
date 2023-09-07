@@ -1,4 +1,4 @@
-DDL Komutları
+DDL Komutları (Tablo)
 ..........................
 
 1) CREATE
@@ -13,4 +13,13 @@ CREATE TABLE tbl_lessons
 lesson_id tinyint,
 lesson_name varchar(20)
 )
+..........................
+2.) ALTER
+
+ALTER TABLE tbl_lessons
+ADD quota smallint
+..........................
+3.) DROP
+
+DROP TABLE tbl_lessons
 ..........................
