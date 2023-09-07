@@ -1,0 +1,16 @@
+DDL Komutları
+..........................
+
+1) CREATE
+2) ALTER
+3) DROP
+
+..........................
+1.) CREATE
+
+CREATE TABLE tbl_lessons
+(
+lesson_id tinyint,
+lesson_name varchar(20)
+)
+..........................
