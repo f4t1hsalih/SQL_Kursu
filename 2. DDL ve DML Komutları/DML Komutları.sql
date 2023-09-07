@@ -28,3 +28,7 @@ delete from tbl_lessons
 
 --id numarasý 6 olan dersi siler
 delete from tbl_lessons where lesson_id = 6
+
+--Truncate Komutu
+--Truncate Table ile tablo tamamen sýfýrlanýr
+truncate table tbl_lessons

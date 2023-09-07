@@ -33,3 +33,6 @@ Delete from Table where ...
 !! İlişkisel tabloların olduğu veritabanlarında tablolardan
 veriler silinmez, veriler aktif ya da pasif hale getirilirler.
 ..........................
+Truncate --> Tabloyu tamamen sıfırlamak için kullanılır
+
+Truncate Table tbl_lessons
