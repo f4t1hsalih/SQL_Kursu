@@ -9,3 +9,10 @@ select * from tbl_students where std_name = 'Ali'
 
 --Ýsmi Ali olan öðrencilerin Þehirlerini getirecek
 select std_city from tbl_students where std_name = 'Ali'
+
+--And birden fazla þartýn tamamýnýn karþýlanmasý gerektiði durumlarda kullanýlýr
+select * from tbl_students where std_city='Adana' and std_club='Kitaplýk'
+
+--Or birden fazla koþulun her birinin olabileceði durumda kullanýlýr
+select * from tbl_students where std_city='Adana' or std_club='Satranç'
+

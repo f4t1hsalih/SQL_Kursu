@@ -6,7 +6,9 @@ DML Komutları (Veri)
 3) Update -->Güncelleme
 4) Delete -->Silme
 
-where--> Şartlı ifadelerde Kullanılır
+where --> Şartlı ifadelerde Kullanılır
+and --> Birden fazla koşulun tamamımın olması gerektiğined kullanılır
+or --> Birden fazla koşulun her birinin olabileceği durumda kullanılır
 ..........................
 1.) Select
 
