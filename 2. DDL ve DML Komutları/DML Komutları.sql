@@ -16,3 +16,7 @@ select * from tbl_students where std_city='Adana' and std_club='Kitaplýk'
 --Or birden fazla koþulun her birinin olabileceði durumda kullanýlýr
 select * from tbl_students where std_city='Adana' or std_club='Satranç'
 
+--Insert Into ile tabloya veri eklendi
+insert into tbl_students(std_name, std_surname, std_city) values ('Baran', 'Yücedað', 'Elazýð')
+insert into tbl_notes (std_id, lesson_id, exam1, exam3) values (6, 2, 88, 67)
+

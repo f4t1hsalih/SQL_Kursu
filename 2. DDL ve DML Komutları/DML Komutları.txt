@@ -20,7 +20,7 @@ Select * from tbl_students
 ..........................
 2.) Insert
 
-
+Insert Into Table(Column1, Column2, Column3, ...) Values (Value1, Value2, Value3, ...)
 ..........................
 3.) Update
 
