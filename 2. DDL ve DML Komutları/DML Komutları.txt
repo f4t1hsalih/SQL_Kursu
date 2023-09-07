@@ -24,7 +24,11 @@ Insert Into Table(Column1, Column2, Column3, ...) Values (Value1, Value2, Value3
 ..........................
 3.) Update
 
+Update Table Set ... where ...
+Update tbl_students set std_gender = 'Erkek' where std_name = 'Baran'
 
+!! Update sorgularında mutlaka WHERE komutu kullanılmalı,
+eğer WHERE kullanımı unutulursa tüm satırlar etkilenir!!
 ..........................
 4.) Delete
 
