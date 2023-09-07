@@ -1,0 +1,30 @@
+DML Komutları (Veri)
+..........................
+
+1) Select -->Seçme, Listeleme
+2) Insert -->Ekleme
+3) Update -->Güncelleme
+4) Delete -->Silme
+
+where--> Şartlı ifadelerde Kullanılır
+..........................
+1.) Select
+
+Select * from Table
+* --> All (Tamamını Seç)
+from --> Den, Dan
+
+Select * from tbl_students
+..........................
+2.) Insert
+
+
+..........................
+3.) Update
+
+
+..........................
+4.) Delete
+
+
+..........................
