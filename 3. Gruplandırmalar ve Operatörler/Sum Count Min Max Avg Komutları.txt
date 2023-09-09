@@ -1,0 +1,26 @@
+1) Sum --> Toplamada kullanılır
+2) Count --> Saymada kullanılır
+3) Min --> Minimumu bulmada kullanılır
+4) Max --> Maximumu bulmada kullanılır
+5) Avg --> Ortalamayı bulmada kullanılır
+..........................
+1.) Sum
+
+select sum(exam1) from tbl_notes
+..........................
+2.) Count
+
+Select count(*) as 'Toplam Kayıt' from tbl_students
+..........................
+3.) Min
+
+select min(exam1) from tbl_notes
+..........................
+4.) Max
+
+select max(exam1) from tbl_notes
+..........................
+5.) Avg
+
+select avg(exam1) from tbl_notes
+..........................

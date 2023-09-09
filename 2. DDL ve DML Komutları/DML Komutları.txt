@@ -6,6 +6,7 @@ DML Komutları (Veri)
 3) Update -->Güncelleme
 4) Delete -->Silme
 
+as --> Olarak manasına gelir ve colonlara isim verirken kullanılır
 where --> Şartlı ifadelerde Kullanılır
 and --> Birden fazla koşulun tamamımın olması gerektiğined kullanılır
 or --> Birden fazla koşulun her birinin olabileceği durumda kullanılır
