@@ -1,22 +1,22 @@
 --COUNT KOMUTU
---Toplam kay�t say�s�n� getirir
-Select count(*) as 'Toplam Kay�t' from tbl_students
+--Toplam kayıt sayısını getirir
+Select count(*) as 'Toplam Kayıt' from tbl_students
 
---Adana'da ka� ki�i oldu�unu getirir
-select count(*) as 'Toplam Ki�i' from tbl_students where std_city = 'Adana'
+--Adana'da kaç kişi olduğunu getirir
+select count(*) as 'Toplam Kişi' from tbl_students where std_city = 'Adana'
 
 --SUM KOMUTU
---Birinci s�nav i�in t�m ��rencilerin notlar�n�n toplam�n� verir
+--Birinci sınav için tüm öğrencilerin notlarının toplamını verir
 select sum(exam1) from tbl_notes
 
 --AVG KOMUTU
---Birinci s�nav i�in t�m ��rencilerin notlar�n�n ortalamas�n� verir
+--Birinci sınav için tam öğrencilerin notlarının ortalamasını verir
 select avg(exam1) from tbl_notes
 
 --MAX KOMUTU
---Birinci s�nav i�in t�m ��rencilerin notlar�n�ndan en y�ksek olan� verir
+--Birinci sınav için tüm öğrencilerin notlarınından en yüksek olanı verir
 select max(exam1) from tbl_notes
 
---M�N KOMUTU
---Birinci s�nav i�in t�m ��rencilerin notlar�n�ndan en d���k olan� verir
+--MİN KOMUTU
+--Birinci sınav için tüm öğrencilerin notlarınından en düşük olanı verir
 select min(exam1) from tbl_notes

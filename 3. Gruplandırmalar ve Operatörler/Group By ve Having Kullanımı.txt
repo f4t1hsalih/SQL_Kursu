@@ -1,0 +1,9 @@
+1) Group By --> Gruplama yapılırken kullanılır
+
+Having --> group by ile birlikte bir şart konulmak istendiğinde having kullanılır
+..........................
+1.) Group By
+
+select std_gender, COUNT(*) from tbl_students group by std_gender
+select std_city, COUNT(*) from tbl_students group by std_city having count(*) = 2
+..........................
