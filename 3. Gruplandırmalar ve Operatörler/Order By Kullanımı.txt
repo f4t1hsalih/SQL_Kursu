@@ -1,0 +1,9 @@
+1) Order by --> Sıralama işlemleri yapılırken kullanılır
+
+asc --> A'dan Z'ye sıralama yapar
+desc --> Z'den A'ya sıralama yapar
+..........................
+1.) Order by
+
+select * from tbl_students order by std_name asc
+..........................
