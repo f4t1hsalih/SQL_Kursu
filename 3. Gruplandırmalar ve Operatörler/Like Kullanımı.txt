@@ -1,0 +1,6 @@
+1) Like --> İçinde geçenleri bulamk için şartta kullanılır
+..........................
+1.) Like
+
+select * from tbl_students where std_name like '%a%'
+..........................
