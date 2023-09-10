@@ -1,0 +1,6 @@
+1) Distinct --> Tekrarsız olarak değer getirmedde kullanılır
+..........................
+1.) Distinct
+
+select distinct std_city from tbl_students
+..........................
