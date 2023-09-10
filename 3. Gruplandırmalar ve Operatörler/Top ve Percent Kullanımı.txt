@@ -1,0 +1,11 @@
+1) Top --> En üstteki değerleri getirir
+2) Percent --> Yüzdesini getirmek için kullanılır
+..........................
+1.) Top
+
+select top 4 * from tbl_students
+..........................
+2.) Percent
+
+select top 60 percent * from tbl_students
+..........................
