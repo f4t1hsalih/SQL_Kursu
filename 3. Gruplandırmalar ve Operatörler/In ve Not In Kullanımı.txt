@@ -1,0 +1,11 @@
+1) In --> İçinde olanları getirmek için kullanılır
+2) Not In --> İçinde olmayanları getirmek için kullanılır
+..........................
+1.) In
+
+select * from tbl_students where std_city in('İzmir', 'Ankara', 'Adana')
+..........................
+1.) Not In
+
+select * from tbl_notes where exam1 not in(70, 75, 80, 85, 90)
+..........................
