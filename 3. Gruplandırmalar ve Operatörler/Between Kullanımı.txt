@@ -1,0 +1,6 @@
+1) Between --> İki değerin arasında olan şeyleri bulmada kullanılır
+..........................
+1.) Between
+
+select * from tbl_notes where average between 74 and 100
+..........................
