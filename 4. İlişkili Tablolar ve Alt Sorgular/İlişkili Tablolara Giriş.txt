@@ -1,0 +1,13 @@
+İlişkili Tablolar
+
+*Veri Karmaşasını Önler
+*Veri Tekrarını Önler
+*Bellek Performansı Sağlar
+..........................
+
+Türleri
+
+*Bire Bir
+*Bire Çok
+*Çoka Çok
+..........................
