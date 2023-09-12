@@ -1,0 +1,6 @@
+1) Alt Sorgu --> bir select sorgusunda gerekli olan bir değeri başka bir select komutu ile çeken sorgulardır
+..........................
+1.) Alt Sorgu
+
+select * from tbl_notes where lesson_id=(select lesson_id from tbl_lessons where lesson_name='Matematik')
+..........................
