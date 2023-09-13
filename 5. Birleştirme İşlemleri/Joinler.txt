@@ -1,0 +1,9 @@
+1) İnner Join --> Ortak olan değerleri getirir
+2) Left Join --> 
+3) Right Join --> 
+4) Full Join --> 
+..........................
+1.) İnner Join
+
+select * from tbl_notes inner join tbl_students on tbl_notes.std_id = tbl_students.std_id
+..........................
