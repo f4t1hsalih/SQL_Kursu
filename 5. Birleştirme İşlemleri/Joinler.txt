@@ -1,9 +1,17 @@
-1) İnner Join --> Ortak olan değerleri getirir
-2) Left Join --> 
-3) Right Join --> 
+1) Inner Join --> Ortak olan değerleri getirir
+2) Left Join --> Sol tarafa yazılan tablodaki + ortak alan değerlerini getirir
+3) Right Join --> Sağ tarafa yazılan tablodaki + ortak alan değerlerini getirir
 4) Full Join --> 
 ..........................
-1.) İnner Join
+1.) Inner Join
 
 select * from tbl_notes inner join tbl_students on tbl_notes.std_id = tbl_students.std_id
+..........................
+2.) Left Join
+
+select * from tbl_notes left join tbl_students on tbl_notes.std_id = tbl_students.std_id
+..........................
+3.) Right Join
+
+select * from tbl_notes right join tbl_students on tbl_notes.std_id = tbl_students.std_id
 ..........................

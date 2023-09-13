@@ -1,4 +1,4 @@
---Inner Join
+--INNER JOIN
 --Ýnner join ile iki tablonun tamamýnda eþleþen deðerler getirilir
 select * from tbl_notes
 inner join tbl_students
