@@ -1,7 +1,9 @@
 1) Inner Join --> Ortak olan değerleri getirir
 2) Left Join --> Sol tarafa yazılan tablodaki + ortak alan değerlerini getirir
 3) Right Join --> Sağ tarafa yazılan tablodaki + ortak alan değerlerini getirir
-4) Full Join --> 
+4) Full Join --> Sağ tarafa yazılan tablodaki ve Sol tarafa yazılan tablodaki tüm değerlerini getirir
+
+5) Union --> İki tabloyu birleştirir ve tek bir tabloymuş gibi sunar
 ..........................
 1.) Inner Join
 
@@ -14,4 +16,12 @@ select * from tbl_notes left join tbl_students on tbl_notes.std_id = tbl_student
 3.) Right Join
 
 select * from tbl_notes right join tbl_students on tbl_notes.std_id = tbl_students.std_id
+..........................
+4.) Full Join
+
+select * from tbl_notes full join tbl_students on tbl_notes.std_id = tbl_students.std_id
+..........................
+5.) Union
+
+select * from tbl_lessons union select * from tbl_club
 ..........................
