@@ -1,19 +1,19 @@
 --Genel Tekrar
 
---Veritabaný oluþturur
+--Veritabanï¿½ oluï¿½turur
 create database krsDbSatis
 
---Veritabanýný seçer
+--Veritabanï¿½nï¿½ seï¿½er
 use krsDbSatis
 
---Kategori tablosunu oluþturur
+--Kategori tablosunu oluï¿½turur
 create table tbl_categories
 (
 category_id tinyint identity(1,1) primary key,
 category_name varchar(50)
 )
 
---Ürün tablosunu oluþturur
+--ï¿½rï¿½n tablosunu oluï¿½turur
 create table tbl_products
 (
 product_id int identity(1,1) primary key,
@@ -26,14 +26,14 @@ product_stock smallint check(product_stock > 0),
 product_status bit default 1
 )
 
---Personel tablosunu oluþturur
+--Personel tablosunu oluï¿½turur
 create table tbl_staff
 (
 staff_id smallint identity(1,1) primary key,
 staff_name_surname varchar(50)
 )
 
---Müþteri tablosunu oluþturur
+--Mï¿½ï¿½teri tablosunu oluï¿½turur
 create table tbl_customer
 (
 customer_id int identity(1,1) primary key,
@@ -43,17 +43,17 @@ customer_city varchar(13),
 customer_balance decimal(18,2)
 )
 
---Hareket tablosunu oluþturur
+--Hareket tablosunu oluï¿½turur
 create table tbl_movement
 (
 movement_id int identity(1,1) primary key,
-product int,
-customer int,
-staff smallint,
+product_id int,
+customer_id int,
+staff_id smallint,
 piece int,
 amount decimal(18,2),
 date smalldatetime
 )
 
---Ürün tablosunu sýfýrlar
+--ï¿½rï¿½n tablosunu sï¿½fï¿½rlar
 truncate table tbl_products
