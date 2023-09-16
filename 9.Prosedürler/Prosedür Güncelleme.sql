@@ -1,11 +1,10 @@
---PROCEDURE KULLANIMI
---Prosedür ile sorgu kaydedildi
-create procedure MOVEMENTS
+--Prosedür Güncelleme
+ALTER procedure [dbo].[MOVEMENTS]
 as
 select 
 movement_id as 'Hareket ID', 
 product_name as 'Ürün', 
-customer_name + ' ' + customer_surname as 'Ad Soyad', 
+Left(customer_name, 1) + '. ' + customer_surname as 'Ad Soyad', 
 staff_name_surname as 'Personel',
 piece as 'Adet',
 amount as 'Tutar',
@@ -19,4 +18,4 @@ inner join tbl_staff
 on tbl_staff.staff_id=tbl_movement.staff_id
 
 --Prosedürü Çaðýrma
-execute MOVEMENTS
+Exec MOVEMENTS
