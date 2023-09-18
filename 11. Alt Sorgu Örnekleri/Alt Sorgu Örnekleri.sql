@@ -26,3 +26,5 @@ update tbl_products set product_stock=product_stock-(select sum(piece) from tbl_
 update tbl_products set product_stock=product_stock-(select sum(piece) from tbl_movement where product_id=9) where product_id=9
 update tbl_products set product_stock=product_stock-(select sum(piece) from tbl_movement where product_id=10) where product_id=10
 
+--Kasa tablosunun deðerinin güncellenmesi
+update tbl_till set total=total+(select sum(amount) from tbl_movement)
