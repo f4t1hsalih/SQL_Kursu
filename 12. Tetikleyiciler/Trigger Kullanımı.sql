@@ -13,3 +13,9 @@ after INSERT         --Insert yapıldıktan sonra
 AS
 UPDATE tbl_totalCategory set piece+=+1
 
+--Trigger kullanarak kategoriler tablosuna her yeni bir kayıt silindiğinde toplamKategori tablosundaki adet isimli stunun değeri 1 azaltır
+CREATE TRIGGER kategoriazalis
+on tbl_categories
+after DELETE
+AS
+update tbl_totalCategory set piece -= 1
