@@ -33,3 +33,12 @@ when 3 then 'KÜÇÜK EV ALETLERÝ'
 else 'BÝLÝNMEYEN'
 end
 from tbl_products
+
+--Ürünlerin stok sayýlarýnýn aralýklarýna göre mesaj verme
+select product_name, product_brand, product_stock,
+case 
+when product_stock >= 1 and product_stock <=5 then 'Kritik Seviye'
+when product_stock >= 6 and product_stock <=10 then 'Takviye Yapýlmalý'
+when product_stock > 10 then 'Stock Sayýsý Yeterli'
+end
+from tbl_products
