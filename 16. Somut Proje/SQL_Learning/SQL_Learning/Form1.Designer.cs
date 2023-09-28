@@ -47,6 +47,8 @@
             this.btnSettings = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,6 +63,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -81,12 +85,12 @@
             this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 497);
+            this.panel1.Size = new System.Drawing.Size(234, 455);
             this.panel1.TabIndex = 0;
             // 
             // btnProducts
             // 
-            this.btnProducts.Location = new System.Drawing.Point(66, 109);
+            this.btnProducts.Location = new System.Drawing.Point(66, 64);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(153, 37);
             this.btnProducts.TabIndex = 1;
@@ -95,15 +99,16 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 109);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 37);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 152);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 107);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 37);
             this.pictureBox2.TabIndex = 2;
@@ -111,7 +116,7 @@
             // 
             // btnCustomers
             // 
-            this.btnCustomers.Location = new System.Drawing.Point(66, 152);
+            this.btnCustomers.Location = new System.Drawing.Point(66, 107);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.Size = new System.Drawing.Size(153, 37);
             this.btnCustomers.TabIndex = 3;
@@ -120,7 +125,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(12, 195);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 150);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(48, 37);
             this.pictureBox3.TabIndex = 4;
@@ -128,7 +133,7 @@
             // 
             // btnCategories
             // 
-            this.btnCategories.Location = new System.Drawing.Point(66, 195);
+            this.btnCategories.Location = new System.Drawing.Point(66, 150);
             this.btnCategories.Name = "btnCategories";
             this.btnCategories.Size = new System.Drawing.Size(153, 37);
             this.btnCategories.TabIndex = 5;
@@ -137,7 +142,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(12, 238);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 193);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(48, 37);
             this.pictureBox4.TabIndex = 6;
@@ -145,7 +150,7 @@
             // 
             // btnStaff
             // 
-            this.btnStaff.Location = new System.Drawing.Point(66, 238);
+            this.btnStaff.Location = new System.Drawing.Point(66, 193);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(153, 37);
             this.btnStaff.TabIndex = 7;
@@ -154,7 +159,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(12, 281);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 236);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(48, 37);
             this.pictureBox5.TabIndex = 8;
@@ -162,7 +167,7 @@
             // 
             // btnTill
             // 
-            this.btnTill.Location = new System.Drawing.Point(66, 281);
+            this.btnTill.Location = new System.Drawing.Point(66, 236);
             this.btnTill.Name = "btnTill";
             this.btnTill.Size = new System.Drawing.Size(153, 37);
             this.btnTill.TabIndex = 9;
@@ -171,7 +176,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(12, 324);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 279);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 37);
             this.pictureBox6.TabIndex = 10;
@@ -179,7 +184,7 @@
             // 
             // btnStatistics
             // 
-            this.btnStatistics.Location = new System.Drawing.Point(66, 324);
+            this.btnStatistics.Location = new System.Drawing.Point(66, 279);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Size = new System.Drawing.Size(153, 37);
             this.btnStatistics.TabIndex = 11;
@@ -188,7 +193,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(12, 367);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 322);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(48, 37);
             this.pictureBox7.TabIndex = 12;
@@ -196,7 +201,7 @@
             // 
             // btnAccounts
             // 
-            this.btnAccounts.Location = new System.Drawing.Point(66, 367);
+            this.btnAccounts.Location = new System.Drawing.Point(66, 322);
             this.btnAccounts.Name = "btnAccounts";
             this.btnAccounts.Size = new System.Drawing.Size(153, 37);
             this.btnAccounts.TabIndex = 13;
@@ -205,7 +210,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(12, 410);
+            this.pictureBox8.Location = new System.Drawing.Point(12, 365);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(48, 37);
             this.pictureBox8.TabIndex = 14;
@@ -213,7 +218,7 @@
             // 
             // btnSettings
             // 
-            this.btnSettings.Location = new System.Drawing.Point(66, 410);
+            this.btnSettings.Location = new System.Drawing.Point(66, 365);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(153, 37);
             this.btnSettings.TabIndex = 15;
@@ -222,7 +227,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(12, 453);
+            this.pictureBox9.Location = new System.Drawing.Point(12, 408);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(48, 37);
             this.pictureBox9.TabIndex = 16;
@@ -230,24 +235,47 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(66, 453);
+            this.btnExit.Location = new System.Drawing.Point(66, 408);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(153, 37);
             this.btnExit.TabIndex = 17;
             this.btnExit.Text = "Çıkış";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(225, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "________________________";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(8, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "SQL Veri Kayıt";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 521);
+            this.ClientSize = new System.Drawing.Size(827, 480);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQL Learning";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -282,6 +310,8 @@
         private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
