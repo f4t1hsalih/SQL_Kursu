@@ -41,7 +41,12 @@ namespace SQL_Learning
 
         private void btnSil_Click(object sender, System.EventArgs e)
         {
-
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("delete from tbl_categories where category_id=@p1", connection);
+            cmd.Parameters.AddWithValue("@p1", txtCategoryID.Text);
+            cmd.ExecuteNonQuery(); //Sorguyu Çalıştırır
+            connection.Close();
+            MessageBox.Show("Silme İşlemi Başarıyla Gerçekleştirildi");
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -49,7 +54,7 @@ namespace SQL_Learning
             //Datagridview'in satırları içerisinde tıklanılan satırın 0.indeksindeki değeri alıp txtCatogoryID'ye atar
             txtCategoryID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             //Datagridview'in satırları içerisinde tıklanılan satırın 1.indeksindeki değeri alıp txtCatogoryName'e atar
-            txtCategoryID.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCategoryName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
     }
 }
