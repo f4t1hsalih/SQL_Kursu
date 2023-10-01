@@ -42,6 +42,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 155);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -71,15 +72,18 @@
             // 
             // btnListele
             // 
+            this.btnListele.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListele.Location = new System.Drawing.Point(317, 12);
             this.btnListele.Name = "btnListele";
             this.btnListele.Size = new System.Drawing.Size(113, 28);
             this.btnListele.TabIndex = 3;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnKaydet
             // 
+            this.btnKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKaydet.Location = new System.Drawing.Point(317, 46);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(113, 28);
@@ -89,6 +93,7 @@
             // 
             // btnGuncelle
             // 
+            this.btnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuncelle.Location = new System.Drawing.Point(317, 80);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(113, 28);
@@ -98,6 +103,7 @@
             // 
             // btnSil
             // 
+            this.btnSil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSil.Location = new System.Drawing.Point(317, 114);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(113, 28);
@@ -138,6 +144,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmCategories";
             this.Text = "Kategoriler";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCategories_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

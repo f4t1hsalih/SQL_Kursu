@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SQL_Learning
 {
-    public partial class Form1 : Form
+    public partial class FrmMain : Form
     {
-        public Form1()
+        public FrmMain()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace SQL_Learning
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FrmCategories categories = new FrmCategories();
+            categories.Show();
+            this.Hide();
         }
     }
 }

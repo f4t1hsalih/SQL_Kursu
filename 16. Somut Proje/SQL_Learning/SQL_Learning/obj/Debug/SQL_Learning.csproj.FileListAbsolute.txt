@@ -2,9 +2,10 @@ D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\bin\Debug\SQL
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\bin\Debug\SQL_Learning.exe
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\bin\Debug\SQL_Learning.pdb
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.csproj.AssemblyReference.cache
-D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.Form1.resources
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.Properties.Resources.resources
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.csproj.GenerateResource.cache
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.csproj.CoreCompileInputs.cache
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.exe
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.pdb
+D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.FrmMain.resources
+D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.FrmCategories.resources
