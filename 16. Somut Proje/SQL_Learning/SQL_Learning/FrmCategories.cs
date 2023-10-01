@@ -34,9 +34,22 @@ namespace SQL_Learning
             connection.Open();
             SqlCommand cmd = new SqlCommand("insert into tbl_categories (category_name) values (@p1)", connection);
             cmd.Parameters.AddWithValue("@p1", txtCategoryName.Text);
-            cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery(); //Sorguyu Çalıştırır
             connection.Close();
             MessageBox.Show("Kaydetme İşlemi Başarıyla Gerçekleştirildi");
+        }
+
+        private void btnSil_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Datagridview'in satırları içerisinde tıklanılan satırın 0.indeksindeki değeri alıp txtCatogoryID'ye atar
+            txtCategoryID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            //Datagridview'in satırları içerisinde tıklanılan satırın 1.indeksindeki değeri alıp txtCatogoryName'e atar
+            txtCategoryID.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
     }
 }
