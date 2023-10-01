@@ -28,5 +28,15 @@ namespace SQL_Learning
             da.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void btnKaydet_Click(object sender, System.EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("insert into tbl_categories (category_name) values (@p1)", connection);
+            cmd.Parameters.AddWithValue("@p1", txtCategoryName.Text);
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("Kaydetme İşlemi Başarıyla Gerçekleştirildi");
+        }
     }
 }
