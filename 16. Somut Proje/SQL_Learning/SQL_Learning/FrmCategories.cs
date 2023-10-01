@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SQL_Learning
 {
-    public partial class FrmProducts : Form
+    public partial class FrmCategories : Form
     {
-        public FrmProducts()
+        public FrmCategories()
         {
             InitializeComponent();
         }
