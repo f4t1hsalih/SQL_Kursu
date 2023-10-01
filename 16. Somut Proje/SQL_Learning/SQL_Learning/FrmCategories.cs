@@ -56,5 +56,16 @@ namespace SQL_Learning
             //Datagridview'in satırları içerisinde tıklanılan satırın 1.indeksindeki değeri alıp txtCatogoryName'e atar
             txtCategoryName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
         }
+
+        private void btnGuncelle_Click(object sender, System.EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand("Update tbl_categories set category_name=@p1 where category_id=@p2", connection);
+            cmd.Parameters.AddWithValue("@p1", txtCategoryName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtCategoryID.Text);
+            cmd.ExecuteNonQuery(); //Sorguyu Çalıştırır
+            connection.Close();
+            MessageBox.Show("Güncelleme İşlemi Başarıyla Gerçekleştirildi");
+        }
     }
 }
