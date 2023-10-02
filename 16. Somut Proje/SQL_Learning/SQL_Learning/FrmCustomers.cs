@@ -46,5 +46,14 @@ namespace SQL_Learning
         {
             Listele();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCustomerID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtCustomerName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtCustomerSurname.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            cmbCity.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtBalance.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
     }
 }
