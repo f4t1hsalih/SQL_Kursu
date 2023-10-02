@@ -9,3 +9,4 @@ D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.pdb
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.FrmMain.resources
 D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.FrmCategories.resources
+D:\Yazilim\SQL\SQL Kursu\16. Somut Proje\SQL_Learning\SQL_Learning\obj\Debug\SQL_Learning.FrmCustomers.resources

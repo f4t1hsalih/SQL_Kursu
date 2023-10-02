@@ -22,9 +22,9 @@ namespace SQL_Learning
 
         void Listele()
         {
-            string command = "select * from tbl_customers";
+            string command = "select * from tbl_customer";
             SqlCommand cmd = new SqlCommand(command, connection);
-            SqlDataAdapter da = new SqlDataAdapter();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -40,6 +40,11 @@ namespace SQL_Learning
             FrmMain main = new FrmMain();
             main.Show();
             this.Hide();
+        }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            Listele();
         }
     }
 }
