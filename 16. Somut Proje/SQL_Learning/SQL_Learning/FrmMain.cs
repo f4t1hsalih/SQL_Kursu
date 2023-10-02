@@ -28,5 +28,12 @@ namespace SQL_Learning
             categories.Show();
             this.Hide();
         }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            FrmCustomers customers = new FrmCustomers();
+            customers.Show();
+            this.Hide();
+        }
     }
 }

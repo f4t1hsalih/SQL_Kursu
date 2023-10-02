@@ -244,6 +244,7 @@
             this.btnCustomers.TabIndex = 3;
             this.btnCustomers.Text = "Müşteriler";
             this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // pictureBox1
             // 
