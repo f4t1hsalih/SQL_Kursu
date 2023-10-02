@@ -33,6 +33,16 @@ namespace SQL_Learning
         private void FrmCustomers_Load(object sender, EventArgs e)
         {
             Listele();
+
+            connection.Open();
+            string command = "select * from tbl_cities";
+            SqlCommand cmd = new SqlCommand( command, connection);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cmbCity.Items.Add(dr["city_name"]);
+            }
+            connection.Close();
         }
 
         private void FrmCustomers_FormClosed(object sender, FormClosedEventArgs e)

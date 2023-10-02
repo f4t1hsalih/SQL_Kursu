@@ -202,6 +202,7 @@
             // 
             // cmbCity
             // 
+            this.cmbCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCity.FormattingEnabled = true;
             this.cmbCity.Location = new System.Drawing.Point(128, 121);
             this.cmbCity.Name = "cmbCity";
