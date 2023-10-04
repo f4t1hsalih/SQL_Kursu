@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace SQL_Learning
@@ -16,6 +11,8 @@ namespace SQL_Learning
         {
             InitializeComponent();
         }
+
+        SqlConnection connection = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=krsDbSatis;Integrated Security=True");
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -34,6 +31,16 @@ namespace SQL_Learning
             FrmCustomers customers = new FrmCustomers();
             customers.Show();
             this.Hide();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            string command = "Exec test4";
+            SqlCommand cmd = new SqlCommand(command, connection);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }
