@@ -44,6 +44,7 @@
             this.txtBalance = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbCity = new System.Windows.Forms.ComboBox();
+            this.btnAra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -133,12 +134,13 @@
             this.dataGridView1.Location = new System.Drawing.Point(13, 14);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(528, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(528, 301);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAra);
             this.groupBox1.Controls.Add(this.cmbCity);
             this.groupBox1.Controls.Add(this.txtBalance);
             this.groupBox1.Controls.Add(this.label5);
@@ -155,7 +157,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(548, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 288);
+            this.groupBox1.Size = new System.Drawing.Size(280, 303);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             // 
@@ -212,12 +214,23 @@
             this.cmbCity.Size = new System.Drawing.Size(128, 28);
             this.cmbCity.TabIndex = 24;
             // 
+            // btnAra
+            // 
+            this.btnAra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAra.Location = new System.Drawing.Point(103, 268);
+            this.btnAra.Name = "btnAra";
+            this.btnAra.Size = new System.Drawing.Size(113, 28);
+            this.btnAra.TabIndex = 25;
+            this.btnAra.Text = "Ara";
+            this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
+            // 
             // FrmCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(840, 314);
+            this.ClientSize = new System.Drawing.Size(840, 329);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -251,5 +264,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCustomerSurname;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAra;
     }
 }

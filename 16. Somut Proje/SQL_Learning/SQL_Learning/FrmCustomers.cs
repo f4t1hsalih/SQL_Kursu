@@ -102,5 +102,18 @@ namespace SQL_Learning
             MessageBox.Show("Kayıt Başarıyla Güncellendi");
             Listele();
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            {
+                string command = "select * from tbl_customer where customer_name=@p1";
+                SqlCommand cmd = new SqlCommand(command, connection);
+                cmd.Parameters.AddWithValue("@p1", txtCustomerName.Text);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+        }
     }
 }
