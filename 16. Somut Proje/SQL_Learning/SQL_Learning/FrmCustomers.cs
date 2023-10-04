@@ -72,6 +72,19 @@ namespace SQL_Learning
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Kayıt Başarıyla Yapıldı");
+            Listele();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string command = "delete from tbl_customer where customer_id = @p1";
+            SqlCommand cmd = new SqlCommand(command, connection);
+            cmd.Parameters.AddWithValue("@p1", txtCustomerID.Text);
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("Kayıt Başarıyla Silindi");
+            Listele();
         }
     }
 }
