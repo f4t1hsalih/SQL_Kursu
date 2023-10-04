@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SQL_Learning
@@ -36,7 +30,7 @@ namespace SQL_Learning
 
             connection.Open();
             string command = "select * from tbl_cities";
-            SqlCommand cmd = new SqlCommand( command, connection);
+            SqlCommand cmd = new SqlCommand(command, connection);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -64,6 +58,20 @@ namespace SQL_Learning
             txtCustomerSurname.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             cmbCity.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtBalance.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void btnKaydet_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string command = "insert into tbl_customer(customer_name,customer_surname, customer_city, customer_balance) values (@p1, @p2, @p3, @p4)";
+            SqlCommand cmd = new SqlCommand(command, connection);
+            cmd.Parameters.AddWithValue("@p1", txtCustomerName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtCustomerSurname.Text);
+            cmd.Parameters.AddWithValue("@p3", cmbCity.Text);
+            cmd.Parameters.AddWithValue("@p4", decimal.Parse(txtBalance.Text));
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("Kayıt Başarıyla Yapıldı");
         }
     }
 }
