@@ -86,5 +86,21 @@ namespace SQL_Learning
             MessageBox.Show("Kayıt Başarıyla Silindi");
             Listele();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string command = "update tbl_customer set customer_name = @p1, customer_surname = @p2, customer_city = @p3, customer_balance = @p4 where customer_id = @p5";
+            SqlCommand cmd = new SqlCommand(command, connection);
+            cmd.Parameters.AddWithValue("@p1", txtCustomerName.Text);
+            cmd.Parameters.AddWithValue("@p2", txtCustomerSurname.Text);
+            cmd.Parameters.AddWithValue("@p3", cmbCity.Text.ToUpper());
+            cmd.Parameters.AddWithValue("@p4", decimal.Parse(txtBalance.Text));
+            cmd.Parameters.AddWithValue("@p5", txtCustomerID.Text);
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("Kayıt Başarıyla Güncellendi");
+            Listele();
+        }
     }
 }
