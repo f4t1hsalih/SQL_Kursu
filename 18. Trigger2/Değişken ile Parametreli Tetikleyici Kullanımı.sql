@@ -6,7 +6,21 @@ on tbl_products
 after insert
 as
 declare @stoksayi int
---ekleme iþlemi yapýlýðýnda stoksayi isimli deðiþkene ürün stok deðerini atar
+--Ekleme iþlemi yapýlýðýnda stoksayi isimli deðiþkene ürün stok deðerini atar
 select @stoksayi = product_stock from inserted
 update tbl_stock set total_product += @stoksayi
+
+
+--Bir ürün silindiði zaman ürün stok adetini toplam stokdan düþer
+create trigger azalt
+on tbl_products
+after delete
+as
+declare @stoksayi int
+--Silme iþlemi yapýlýðýnda stoksayi isimli deðiþkene ürün stok deðerini atar
+select @stoksayi = product_stock from deleted
+update tbl_stock set total_product -= @stoksayi
+
+--Kod ile ürün ekleme
+insert into tbl_products (product_name, product_stock) values ('Mixer', 80)
 
