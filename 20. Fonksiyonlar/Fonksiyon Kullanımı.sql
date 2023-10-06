@@ -24,3 +24,15 @@ end
 --kucukharf fonksiyonunun kullanýmý
 select dbo.kucukharf(product_name), product_stock from tbl_products
 
+--Decimal türünden deðer döndüren ve kdv arttýrýmý yapan fonksiyon
+create function KDV(@deger decimal(18,2))
+returns decimal(18,2)
+as
+begin
+--Gelen deðeri %20 arttýrýr
+return @deger * 1.20
+end
+
+--Fonksiyonun çaðrýlmasý
+select product_name, product_sprice, dbo.KDV(product_sprice) as 'KDV li Fiyat' from tbl_products
+
