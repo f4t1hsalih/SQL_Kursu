@@ -36,3 +36,16 @@ end
 --Fonksiyonun çaðrýlmasý
 select product_name, product_sprice, dbo.KDV(product_sprice) as 'KDV li Fiyat' from tbl_products
 
+--Tablo bazlý ddeðer döndüren fonksiyonllar
+
+--Girilen ürün id ye ait bilgileri tablo olarak geriye döndüren fonksiyon
+--Tablo geriye döndüren fonksiyon kullanýlýrken -begin end- bloklarý kullanýlmaz
+create function urunbilgi(@id int)
+--Tablo türünde deðer geriye döndürür
+returns table
+as
+return select * from tbl_products where product_id = @id
+
+--Fonksiyonun kullanýmý
+select * from dbo.urunbilgi(4)
+
