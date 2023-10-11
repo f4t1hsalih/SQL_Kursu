@@ -35,3 +35,9 @@ set statistics time on
 
 select * from tbl_tablo1
 select * from tbl_tablo1 where id = 20000
+
+--Clustered index oluþturma ve istatistiklerine bakma
+create clustered index tablokayitgetir on tbl_tablo1(id)
+
+select * from tbl_tablo1 where id = 20000
+
